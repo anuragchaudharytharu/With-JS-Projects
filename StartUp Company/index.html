@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Company</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!------------------------------------------------------ HEADER section ------------------------------------------------------>
+    <header class="header" id="header">
+      <!----------- header NAVIGATION BAR ------------->
+      <nav id="nav">
+        <div class="navLeft">
+          <a href="index.html">
+            <img src="Images/Company logo.png" />
+          </a>
+
+          <div class="navLinks" id="nav-link">
+            <a href="#nav-link" onclick="closeMEnuBar()">
+              <i class="fa fa-times"></i>
+            </a>
+            <ul class="navLink">
+              <li><a href="index.html" class="navLink-menu">Home</a></li>
+              <li><a href="#whoWeAre" class="navLink-menu">About Us</a></li>
+              <li>
+                <a href="#resourceId" class="navLink-menu">Case Studies</a>
+              </li>
+              <li>
+                <a
+                  href="#dropDown"
+                  class="navLink-menu"
+                  id="navLinkMenu"
+                  onclick="showDropDown()"
+                >
+                  Resources
+                  <img src="Images/DropDownIcon.png" class="dropDownIcon" />
+                </a>
+                <ul class="drop-down" id="drop-down">
+                  <a href="#drop-down">
+                    <img
+                      src="Images/search-close.png"
+                      class="closeDropDown"
+                      onclick="closeDrop()"
+                  /></a>
+                  <li>
+                    <a href="#newId">
+                      <img src="Images/drop-down-1.png" alt="" />
+                      <div>
+                        <h1>Blog</h1>
+                        <p>The latest industry news, updates and info.</p>
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#campaignId">
+                      <img src="Images/drop-down-2.png" alt="" />
+                      <div>
+                        <h1>Customer stories</h1>
+                        <p>Learn how our customers are making big changes.</p>
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="">
+                      <img src="Images/drop-down-3.png" alt="" />
+                      <div>
+                        <h1>Video tutorials</h1>
+                        <p>
+                          Get up and running on new features and techniques.
+                        </p>
+                      </div>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="search">
+          <a href="search-page/search.html" class="searchBtn">
+            <img src="Images/SearchLogo.png" />
+          </a>
+        </div>
+        <div class="toggleBtn">
+          <a href="#navlinks"><i class="fa fa-bars"></i></a>
+        </div>
+      </nav>
+
+      <!------------ header BODY CONTENT -------------->
+      <div class="text-box">
+        <h1>Beautiful analytics to grow smarter</h1>
+        <p>
+          Powerful, self-serve product and growth analytics to help you convert,
+          engage, <br />
+          and retain more users. Trusted by over 4,000 startups.
+        </p>
+        <a href="">
+          <button class="watchCatalogBtn">
+            Watch Catalog?<img src="Images/arrow_forward.png" />
+          </button>
+        </a>
+      </div>
+    </header>
+
+    <!------------------------------------------------ CAMPAIGNS section -------------------------------------------------------------->
+    <section class="campaign" id="campaignId">
+      <div class="campaignDetails">
+        <h1>Campaigns</h1>
+        <p>
+          We aim to stop public funds siphoning off and we have a plan that will
+          help. We are <br />
+          working at the national and EU levels to advance.
+        </p>
+      </div>
+      <div class="cards">
+        <div class="card">
+          <img src="Images/Image Placeholder-1.png" />
+          <div class="cardDetails">
+            <h3>Open Data Directive</h3>
+            <p>
+              In view of Russia's military action against the Ukrainian people,
+              being concerned about ensuring that European funds In view of
+              Russia's military action against the Ukrainian people,
+            </p>
+            <a href="">Learn More<img src="Images/Vector.png" /></a>
+          </div>
+        </div>
+        <div class="card">
+          <img src="Images/Image Placeholder-2.png" />
+          <div class="cardDetails">
+            <h3>Beneficial Ownership</h3>
+            <p>
+              In view of Russia's military action against the Ukrainian people,
+              being concerned about ensuring that European funds In view of
+              Russia's military action against the Ukrainian people,
+            </p>
+            <a href="">Learn More<img src="Images/Vector.png" /></a>
+          </div>
+        </div>
+        <div class="card">
+          <img src="Images/Image Placeholder-3.png" />
+          <div class="cardDetails">
+            <h3>EU Recovery Transparency</h3>
+            <p>
+              In view of Russia's military action against the Ukrainian people,
+              being concerned about ensuring that European funds In view of
+              Russia's military action against the Ukrainian people,
+            </p>
+            <a href="">Learn More<img src="Images/Vector.png" /></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!------------------------------------------------ WHO WE ARE section -------------------------------------------------------------->
+    <secttion class="who-we-are" id="whoWeAre">
+      <div class="who-we-are-content">
+        <h1>Who we are</h1>
+        <p>
+          We are a collaboration of Non Govt. and professionals working to
+          ensure that government spending is done fairly, openly, efficiently,
+          and creates the best value for money and best outcomes for Europe. We
+          are working at the national and EU levels to advance the principles of
+          openness in spending of funds, procurement, and company ownership
+          within the EU.
+        </p>
+        <a href="">See More<img src="Images/Vector.png" /></a>
+      </div>
+      <div class="peoples">
+        <div class="peoplesFirst">
+          <div>
+            <img src="Images/Who-We-Are-Image-1.png" class="peopleImg" />
+            <h1>Adriana Homolova</h1>
+          </div>
+          <div>
+            <img src="Images/Who-We-Are-Image-2.png" class="peopleImg" />
+            <h1>Karolis Granickas</h1>
+          </div>
+        </div>
+        <div class="peoplesSecond">
+          <div>
+            <img src="Images/Who-We-Are-Image-3.png" alt="" class="peopleImg" />
+            <h1>Sandor Lederer</h1>
+          </div>
+          <div>
+            <img src="Images/Who-We-Are-Image-4.png" alt="" class="peopleImg" />
+          </div>
+        </div>
+      </div>
+    </secttion>
+
+    <!------------------------------------------------ FEATURES section -------------------------------------------------------------->
+    <section class="features">
+      <div>
+        <a href=""><img src="Images/less-than.png" class="less-than" /></a>
+        <a href=""><img src="Images/Layers.png" class="layers" /></a>
+        <a href=""><img src="Images/Quotient.png" class="quotient" /></a>
+        <a href=""><img src="Images/Sisyphus.png" class="sisyphus" /></a>
+        <a href=""><img src="Images/Hourglass.png" class="hourglass" /></a>
+        <a href=""><img src="Images/Circooles.png" class="circooles" /></a>
+        <a href=""
+          ><img src="Images/greater-than.png" class="greater-than"
+        /></a>
+      </div>
+    </section>
+
+    <!------------------------------------------------ NEWS section -------------------------------------------------------------->
+    <section class="news" id="newId">
+      <div class="news-details">
+        <h1>News</h1>
+        <p>
+          We aim to stop public funds siphoning off and we have a plan that will
+          <br />
+          help. We are working at the national and EU levels to advance.
+        </p>
+      </div>
+
+      <div class="news-grid">
+        <div class="news-card">
+          <img src="Images/news-image-1.png" class="news-card-image" />
+          <div class="news-card-details">
+            <h1>Statement from the Catalogue Coalition...</h1>
+            <p>
+              In view of Russia's military action against the Ukrainian people,
+              being concerned about ensuring that European funds...
+            </p>
+            <a href="">Learn More <img src="Images/Vector.png" alt="" /></a>
+          </div>
+        </div>
+        <div class="news-card">
+          <img src="Images/news-image-2.png" class="news-card-image" />
+          <div class="news-card-details">
+            <h1>Statement from the Catalogue Coalition...</h1>
+            <p>
+              In view of Russia's military action against the Ukrainian people,
+              being concerned about ensuring that European funds...
+            </p>
+            <a href="">Learn More <img src="Images/Vector.png" alt="" /></a>
+          </div>
+        </div>
+        <div class="news-card">
+          <img src="Images/news-image-3.png" class="news-card-image" />
+          <div class="news-card-details">
+            <h1>Statement from the Catalogue Coalition...</h1>
+            <p>
+              In view of Russia's military action against the Ukrainian people,
+              being concerned about ensuring that European funds...
+            </p>
+            <a href="">Learn More <img src="Images/Vector.png" alt="" /></a>
+          </div>
+        </div>
+        <div class="news-card">
+          <img src="Images/news-image-4.png" class="news-card-image" />
+          <div class="news-card-details">
+            <h1>Statement from the Catalogue Coalition...</h1>
+            <p>
+              In view of Russia's military action against the Ukrainian people,
+              being concerned about ensuring that European funds...
+            </p>
+            <a href="">Learn More <img src="Images/Vector.png" alt="" /></a>
+          </div>
+        </div>
+        <div class="news-card">
+          <img src="Images/news-image-5.png" class="news-card-image" />
+          <div class="news-card-details">
+            <h1>Statement from the Catalogue Coalition...</h1>
+            <p>
+              In view of Russia's military action against the Ukrainian people,
+              being concerned about ensuring that European funds...
+            </p>
+            <a href="">Learn More <img src="Images/Vector.png" alt="" /></a>
+          </div>
+        </div>
+        <div class="news-card">
+          <img src="Images/news-image-6.png" class="news-card-image" />
+          <div class="news-card-details">
+            <h1>Statement from the Catalogue Coalition...</h1>
+            <p>
+              In view of Russia's military action against the Ukrainian people,
+              being concerned about ensuring that European funds...
+            </p>
+            <a href="">Learn More <img src="Images/Vector.png" alt="" /></a>
+          </div>
+        </div>
+      </div>
+      <a href="">
+        <button class="view-all-news-btn">View all news</button>
+      </a>
+    </section>
+
+    <!------------------------------------------------ LATEST RESOURCES section -------------------------------------------------------------->
+    <section class="resources" id="resourceId">
+      <div class="resource-details">
+        <h1>Latest Resources</h1>
+        <p>
+          The latest resources includes Transparency Toolkit, <br />
+          Evidence, Best Practices
+        </p>
+      </div>
+
+      <div class="resource-grid">
+        <div class="resource-card">
+          <img src="Images/resource-1.png" />
+          <div class="resource-card-details">
+            <h1 class="resource-card-1-title">Defence Elvis</h1>
+            <p>
+              It allows creating networks of public spending on goods services
+              used in defense in 28 EU countries...
+            </p>
+            <a href="">Learn More <img src="Images/Vector.png" alt="" /></a>
+          </div>
+        </div>
+        <div class="resource-card">
+          <img src="Images/resource-2.png" />
+          <div class="resource-card-details">
+            <h1 class="resource-card-2and3-title">Defence Elvis</h1>
+            <p>
+              It allows creating networks of public spending on goods services
+              used in defense in 28 EU countries...
+            </p>
+            <a href="">Learn More <img src="Images/Vector.png" alt="" /></a>
+          </div>
+        </div>
+        <div class="resource-card">
+          <img src="Images/resource-3.png" />
+          <div class="resource-card-details">
+            <h1 class="resource-card-2and3-title">Defence Elvis</h1>
+            <p>
+              It allows creating networks of public spending on goods services
+              used in defense in 28 EU countries...
+            </p>
+            <a href="">Learn More <img src="Images/Vector.png" alt="" /></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!------------------------------------------------ CONTACT US section -------------------------------------------------------------->
+    <section class="contact-us-section">
+      <div class="contact-us-form">
+        <div class="contact-us-details">
+          <h1>Contact Us</h1>
+          <p>
+            If you have any further inquires, please let us know <br />
+            by filling the form below
+          </p>
+        </div>
+        <div class="contact-inputs">
+          <div class="contact-name">
+            <div class="first-name">
+              <h2>First Name</h2>
+              <input type="text" name="" id="" />
+            </div>
+            <div class="last-name">
+              <h2>Last Name</h2>
+              <input type="text" name="" id="" />
+            </div>
+          </div>
+
+          <div class="contact-email">
+            <h1>Email</h1>
+            <input type="text" name="" id="" />
+          </div>
+
+          <div class="contact-message">
+            <h1>Message</h1>
+            <input type="text" name="" id="" />
+          </div>
+        </div>
+
+        <a href="">
+          <button class="submit-btn">Submit</button>
+        </a>
+      </div>
+    </section>
+
+    <!------------------------------------------------ FOOTER-TOP section -------------------------------------------------------------->
+    <footer class="footer-top" id="#header">
+      <div class="footer-left">
+        <img src="Images/footer-logo.png" />
+        <p>
+          We are a collaboration of non-government <br />
+          organisation and professionals working to <br />
+          ensure that government spending.
+        </p>
+        <div class="social-media">
+          <a href=""><img src="Images/Twitter.png" alt="" /></a>
+          <a href=""><img src="Images/linkedin.png" alt="" /></a>
+          <a href=""><img src="Images/youtube.png" alt="" /></a>
+        </div>
+      </div>
+
+      <div class="footer-right">
+        <div class="fLinks">
+          <h1>Links</h1>
+          <ul>
+            <li><a href="">Campaigns</a></li>
+            <li><a href="">Resources</a></li>
+            <li><a href="">News</a></li>
+            <li><a href="">About Us</a></li>
+          </ul>
+        </div>
+        <div class="fResources">
+          <h1>Resources</h1>
+          <ul>
+            <li><a href="">Transparency Toolkit</a></li>
+            <li><a href="">Evidence</a></li>
+            <li><a href="">Best Practices</a></li>
+          </ul>
+        </div>
+        <div class="fWork">
+          <h1>Work with Us</h1>
+          <ul>
+            <li><a href="">Contact Us</a></li>
+            <li><a href="">Join Us</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+    <!------------------------------------------------ FOOTER-TOP section -------------------------------------------------------------->
+    <footer class="footer-bottom">
+      <h1>Terms and Conditions</h1>
+      <div>
+        <img src="Images/footer-bottom.png" />
+        <a href="#header">
+          <img src="Images/arrow_upward.png" class="arrow-up" />
+        </a>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
